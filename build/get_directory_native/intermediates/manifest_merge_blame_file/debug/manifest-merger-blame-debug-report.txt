@@ -1,0 +1,15 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ardev.get_directory_native" >
+4
+5    <uses-sdk android:minSdkVersion="16" />
+5-->/Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml
+6
+7    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+7-->/Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:4:5-80
+7-->/Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:4:22-77
+8    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+8-->/Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:5:5-81
+8-->/Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:5:22-78
+9
+10</manifest>

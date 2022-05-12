@@ -1,0 +1,2 @@
+com/ardev/get_directory_native/BuildConfig.java
+ com.ardev.get_directory_native.BuildConfig

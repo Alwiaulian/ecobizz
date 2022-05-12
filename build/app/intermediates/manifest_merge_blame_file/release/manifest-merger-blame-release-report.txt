@@ -1,0 +1,517 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.elemes.ecobiz_mobile_flutter"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:7:5-67
+11-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:7:22-64
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:8:5-68
+12-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:8:22-65
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- https://developer.android.com/training/package-visibility -->
+13-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:9:5-79
+13-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:9:22-76
+14    <queries>
+14-->[:flutter_downloader] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/flutter_downloader/intermediates/library_manifest/release/AndroidManifest.xml:8:5-12:15
+15        <intent>
+15-->[:flutter_downloader] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/flutter_downloader/intermediates/library_manifest/release/AndroidManifest.xml:9:9-11:18
+16            <action android:name="android.intent.action.VIEW" />
+16-->[:flutter_downloader] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/flutter_downloader/intermediates/library_manifest/release/AndroidManifest.xml:10:13-65
+16-->[:flutter_downloader] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/flutter_downloader/intermediates/library_manifest/release/AndroidManifest.xml:10:21-62
+17        </intent>
+18    </queries>
+19
+20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+20-->[:get_directory_native] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/get_directory_native/intermediates/library_manifest/release/AndroidManifest.xml:7:5-80
+20-->[:get_directory_native] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/get_directory_native/intermediates/library_manifest/release/AndroidManifest.xml:7:22-77
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+21-->[:get_directory_native] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/get_directory_native/intermediates/library_manifest/release/AndroidManifest.xml:8:5-81
+21-->[:get_directory_native] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/get_directory_native/intermediates/library_manifest/release/AndroidManifest.xml:8:22-78
+22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+22-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:5-82
+22-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:22-79
+23    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+23-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
+23-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
+24    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+24-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
+24-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
+25
+26    <application
+27        android:name="android.app.Application"
+27-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:5:9-42
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.6.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:24:18-86
+29        android:icon="@mipmap/logosplash"
+29-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:6:9-42
+30        android:label="ecobiz-mobile" >
+30-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:4:9-38
+31        <activity
+31-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:7:9-27:20
+32            android:name="com.elemes.ecobiz_mobile_flutter.MainActivity"
+32-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:8:13-41
+33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+33-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:12:13-163
+34            android:exported="true"
+34-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:9:13-36
+35            android:hardwareAccelerated="true"
+35-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:13:13-47
+36            android:launchMode="singleTop"
+36-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:10:13-43
+37            android:theme="@style/LaunchTheme"
+37-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:11:13-47
+38            android:windowSoftInputMode="adjustResize" >
+38-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:14:13-55
+39
+40            <!--
+41                 Specifies an Android theme to apply to this Activity as soon as
+42                 the Android process has started. This theme is visible to the user
+43                 while the Flutter UI initializes. After that, this theme continues
+44                 to determine the Window background behind the Flutter UI.
+45            -->
+46            <meta-data
+46-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:19:13-22:17
+47                android:name="io.flutter.embedding.android.NormalTheme"
+47-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:20:15-70
+48                android:resource="@style/NormalTheme" />
+48-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:21:15-52
+49
+50            <intent-filter>
+50-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:23:13-26:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:24:17-68
+51-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:24:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:25:17-76
+53-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:25:27-74
+54            </intent-filter>
+55        </activity>
+56        <!--
+57             Don't delete the meta-data below.
+58             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+59        -->
+60        <meta-data
+60-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:30:9-32:33
+61            android:name="flutterEmbedding"
+61-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:31:13-44
+62            android:value="2" />
+62-->/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/android/app/src/main/AndroidManifest.xml:32:13-30
+63
+64        <service
+64-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:12:9-15:72
+65            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+65-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:13:13-107
+66            android:exported="false"
+66-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:14:13-37
+67            android:permission="android.permission.BIND_JOB_SERVICE" />
+67-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:15:13-69
+68        <service
+68-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:16:9-22:19
+69            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+69-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:17:13-97
+70            android:exported="false" >
+70-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:18:13-37
+71            <intent-filter>
+71-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:19:13-21:29
+72                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+72-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:20:17-78
+72-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:20:25-75
+73            </intent-filter>
+74        </service>
+75
+76        <receiver
+76-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:24:9-31:20
+77            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+77-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:25:13-98
+78            android:exported="true"
+78-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:26:13-36
+79            android:permission="com.google.android.c2dm.permission.SEND" >
+79-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:27:13-73
+80            <intent-filter>
+80-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:28:13-30:29
+81                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+81-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:29:17-81
+81-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:29:25-78
+82            </intent-filter>
+83        </receiver>
+84
+85        <service
+85-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:33:9-37:19
+86            android:name="com.google.firebase.components.ComponentDiscoveryService"
+86-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:33:18-89
+87            android:directBootAware="true"
+87-->[com.google.firebase:firebase-common:20.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/3660c810531840b7362e70bfaa69e2c8/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+88            android:exported="false" >
+88-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:51:13-37
+89            <meta-data
+89-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:34:13-36:85
+90                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+90-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:35:17-128
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:36:17-82
+92            <meta-data
+92-->[:firebase_core] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:9:13-11:85
+93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+93-->[:firebase_core] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:10:17-124
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[:firebase_core] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_core/intermediates/library_manifest/release/AndroidManifest.xml:11:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
+96                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+96-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
+98            <meta-data
+98-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/a054f23e173260ed2ee183f0aa3f0ef1/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+99                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+99-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/a054f23e173260ed2ee183f0aa3f0ef1/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/a054f23e173260ed2ee183f0aa3f0ef1/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+101            <meta-data
+101-->[com.google.firebase:firebase-installations:17.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/b87bb1cad51e9267e95279b4dd0cc2eb/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+102                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+102-->[com.google.firebase:firebase-installations:17.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/b87bb1cad51e9267e95279b4dd0cc2eb/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[com.google.firebase:firebase-installations:17.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/b87bb1cad51e9267e95279b4dd0cc2eb/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+104        </service>
+105
+106        <provider
+106-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:39:9-43:38
+107            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+107-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:40:13-102
+108            android:authorities="com.elemes.ecobiz_mobile_flutter.flutterfirebasemessaginginitprovider"
+108-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:41:13-88
+109            android:exported="false"
+109-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:42:13-37
+110            android:initOrder="99" />
+110-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:43:13-35
+111        <provider
+111-->[:image_picker] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:8:9-16:20
+112            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+112-->[:image_picker] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:9:13-82
+113            android:authorities="com.elemes.ecobiz_mobile_flutter.flutter.image_provider"
+113-->[:image_picker] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:10:13-74
+114            android:exported="false"
+114-->[:image_picker] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:13-37
+115            android:grantUriPermissions="true" >
+115-->[:image_picker] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:12:13-47
+116            <meta-data
+116-->[:image_picker] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:13-15:75
+117                android:name="android.support.FILE_PROVIDER_PATHS"
+117-->[:image_picker] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:14:17-67
+118                android:resource="@xml/flutter_image_picker_file_paths" />
+118-->[:image_picker] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:15:17-72
+119        </provider>
+120
+121        <uses-library
+121-->[androidx.window:window:1.0.0-beta04] /Users/macbook/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+122            android:name="androidx.window.extensions"
+122-->[androidx.window:window:1.0.0-beta04] /Users/macbook/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+123            android:required="false" />
+123-->[androidx.window:window:1.0.0-beta04] /Users/macbook/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+124        <uses-library
+124-->[androidx.window:window:1.0.0-beta04] /Users/macbook/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+125            android:name="androidx.window.sidecar"
+125-->[androidx.window:window:1.0.0-beta04] /Users/macbook/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+126            android:required="false" />
+126-->[androidx.window:window:1.0.0-beta04] /Users/macbook/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+127
+128        <receiver
+128-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
+129            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+129-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
+130            android:exported="true"
+130-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
+131            android:permission="com.google.android.c2dm.permission.SEND" >
+131-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
+132            <intent-filter>
+132-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:28:13-30:29
+133                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+133-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:29:17-81
+133-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:29:25-78
+134            </intent-filter>
+135        </receiver>
+136        <!--
+137             FirebaseMessagingService performs security checks at runtime,
+138             but set to not exported to explicitly avoid allowing another app to call it.
+139        -->
+140        <service
+140-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
+141            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+141-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
+142            android:directBootAware="true"
+142-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
+143            android:exported="false" >
+143-->[com.google.firebase:firebase-messaging:23.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
+144            <intent-filter android:priority="-500" >
+144-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:19:13-21:29
+145                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+145-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:20:17-78
+145-->[:firebase_messaging] /Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/firebase_messaging/intermediates/library_manifest/release/AndroidManifest.xml:20:25-75
+146            </intent-filter>
+147        </service>
+148
+149        <provider
+149-->[com.google.firebase:firebase-common:20.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/3660c810531840b7362e70bfaa69e2c8/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+150            android:name="com.google.firebase.provider.FirebaseInitProvider"
+150-->[com.google.firebase:firebase-common:20.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/3660c810531840b7362e70bfaa69e2c8/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+151            android:authorities="com.elemes.ecobiz_mobile_flutter.firebaseinitprovider"
+151-->[com.google.firebase:firebase-common:20.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/3660c810531840b7362e70bfaa69e2c8/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+152            android:directBootAware="true"
+152-->[com.google.firebase:firebase-common:20.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/3660c810531840b7362e70bfaa69e2c8/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+153            android:exported="false"
+153-->[com.google.firebase:firebase-common:20.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/3660c810531840b7362e70bfaa69e2c8/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+154            android:initOrder="100" />
+154-->[com.google.firebase:firebase-common:20.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/3660c810531840b7362e70bfaa69e2c8/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+155        <provider
+155-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+156            android:name="androidx.startup.InitializationProvider"
+156-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+157            android:authorities="com.elemes.ecobiz_mobile_flutter.androidx-startup"
+157-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+158            android:exported="false" >
+158-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+159            <meta-data
+159-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+160                android:name="androidx.work.WorkManagerInitializer"
+160-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+161                android:value="androidx.startup" />
+161-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+162        </provider>
+163
+164        <service
+164-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+165            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+165-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+166            android:directBootAware="false"
+166-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+167            android:enabled="@bool/enable_system_alarm_service_default"
+167-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+168            android:exported="false" />
+168-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+169        <service
+169-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+170            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+170-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+171            android:directBootAware="false"
+171-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+172            android:enabled="@bool/enable_system_job_service_default"
+172-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+173            android:exported="true"
+173-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+174            android:permission="android.permission.BIND_JOB_SERVICE" />
+174-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+175        <service
+175-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+176            android:name="androidx.work.impl.foreground.SystemForegroundService"
+176-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+177            android:directBootAware="false"
+177-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+178            android:enabled="@bool/enable_system_foreground_service_default"
+178-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+179            android:exported="false" />
+179-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+180
+181        <receiver
+181-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+182            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+182-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+183            android:directBootAware="false"
+183-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+184            android:enabled="true"
+184-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+185            android:exported="false" />
+185-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+186        <receiver
+186-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+187            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+187-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+188            android:directBootAware="false"
+188-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+189            android:enabled="false"
+189-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+190            android:exported="false" >
+190-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+191            <intent-filter>
+191-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+192                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+192-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+192-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+193                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+193-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+193-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+194            </intent-filter>
+195        </receiver>
+196        <receiver
+196-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+197            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+197-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+198            android:directBootAware="false"
+198-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+199            android:enabled="false"
+199-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+200            android:exported="false" >
+200-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+201            <intent-filter>
+201-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+202                <action android:name="android.intent.action.BATTERY_OKAY" />
+202-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+202-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+203                <action android:name="android.intent.action.BATTERY_LOW" />
+203-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+203-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+204            </intent-filter>
+205        </receiver>
+206        <receiver
+206-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+207            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+207-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+208            android:directBootAware="false"
+208-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+209            android:enabled="false"
+209-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+210            android:exported="false" >
+210-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+211            <intent-filter>
+211-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+212                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+212-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+212-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+213                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+213-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+213-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+214            </intent-filter>
+215        </receiver>
+216        <receiver
+216-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+217            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+217-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+218            android:directBootAware="false"
+218-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+219            android:enabled="false"
+219-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+220            android:exported="false" >
+220-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+221            <intent-filter>
+221-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+222                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+222-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+222-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+223            </intent-filter>
+224        </receiver>
+225        <receiver
+225-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+226            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+226-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+227            android:directBootAware="false"
+227-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+228            android:enabled="false"
+228-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+229            android:exported="false" >
+229-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+230            <intent-filter>
+230-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+231                <action android:name="android.intent.action.BOOT_COMPLETED" />
+231-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+231-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+232                <action android:name="android.intent.action.TIME_SET" />
+232-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+232-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+233                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+233-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+233-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+234            </intent-filter>
+235        </receiver>
+236        <receiver
+236-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+237            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+237-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+238            android:directBootAware="false"
+238-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+239            android:enabled="@bool/enable_system_alarm_service_default"
+239-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+240            android:exported="false" >
+240-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+241            <intent-filter>
+241-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+242                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+242-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+242-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+243            </intent-filter>
+244        </receiver>
+245        <receiver
+245-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+246            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+246-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+247            android:directBootAware="false"
+247-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+248            android:enabled="true"
+248-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+249            android:exported="true"
+249-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+250            android:permission="android.permission.DUMP" >
+250-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+251            <intent-filter>
+251-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+252                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+252-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+252-->[androidx.work:work-runtime:2.7.1] /Users/macbook/.gradle/caches/transforms-2/files-2.1/54150d832f66966ca3fadb99fface133/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+253            </intent-filter>
+254        </receiver>
+255
+256        <meta-data
+256-->[com.google.android.gms:play-services-basement:17.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+257            android:name="com.google.android.gms.version"
+257-->[com.google.android.gms:play-services-basement:17.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+258            android:value="@integer/google_play_services_version" />
+258-->[com.google.android.gms:play-services-basement:17.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/a7975ba3cb0c3630bd14453686890431/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+259
+260        <service
+260-->[androidx.room:room-runtime:2.2.5] /Users/macbook/.gradle/caches/transforms-2/files-2.1/5a9abbd9b8f0f835c4fddb4cf7ae6694/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+261            android:name="androidx.room.MultiInstanceInvalidationService"
+261-->[androidx.room:room-runtime:2.2.5] /Users/macbook/.gradle/caches/transforms-2/files-2.1/5a9abbd9b8f0f835c4fddb4cf7ae6694/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+262            android:directBootAware="true"
+262-->[androidx.room:room-runtime:2.2.5] /Users/macbook/.gradle/caches/transforms-2/files-2.1/5a9abbd9b8f0f835c4fddb4cf7ae6694/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+263            android:exported="false" />
+263-->[androidx.room:room-runtime:2.2.5] /Users/macbook/.gradle/caches/transforms-2/files-2.1/5a9abbd9b8f0f835c4fddb4cf7ae6694/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+264        <service
+264-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/56bc395c90366e88fb92a4b31fd2152e/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+265            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+265-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/56bc395c90366e88fb92a4b31fd2152e/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+266            android:exported="false" >
+266-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/56bc395c90366e88fb92a4b31fd2152e/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+267            <meta-data
+267-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/56bc395c90366e88fb92a4b31fd2152e/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+268                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+268-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/56bc395c90366e88fb92a4b31fd2152e/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+269                android:value="cct" />
+269-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/56bc395c90366e88fb92a4b31fd2152e/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+270        </service>
+271        <service
+271-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/8ce73474f999750db788ab1011eb9a5f/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+272            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+272-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/8ce73474f999750db788ab1011eb9a5f/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+273            android:exported="false"
+273-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/8ce73474f999750db788ab1011eb9a5f/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+274            android:permission="android.permission.BIND_JOB_SERVICE" >
+274-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/8ce73474f999750db788ab1011eb9a5f/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+275        </service>
+276
+277        <receiver
+277-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/8ce73474f999750db788ab1011eb9a5f/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+278            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+278-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/8ce73474f999750db788ab1011eb9a5f/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+279            android:exported="false" />
+279-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/macbook/.gradle/caches/transforms-2/files-2.1/8ce73474f999750db788ab1011eb9a5f/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+280    </application>
+281
+282</manifest>

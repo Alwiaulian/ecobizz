@@ -1,0 +1,27 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:2:3-43
+		INJECTED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:4:5-80
+	android:name
+		ADDED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:4:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml:5:22-78
+uses-sdk
+INJECTED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml
+INJECTED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml
+		ADDED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/macbook/Documents/flutter/.pub-cache/git/get_directory_native-e05d9777895075eb66c6f89f24a434d72d7e188d/android/src/main/AndroidManifest.xml

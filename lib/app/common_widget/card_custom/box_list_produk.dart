@@ -1,0 +1,77 @@
+import 'package:ecobiz_mobile_flutter/app/res/colors_data.dart';
+import 'package:ecobiz_mobile_flutter/app/res/styles.dart';
+import 'package:ecobiz_mobile_flutter/const/sized_border_radius.dart';
+import 'package:ecobiz_mobile_flutter/const/sized_font.dart';
+import 'package:ecobiz_mobile_flutter/const/sized_font_weight.dart';
+import 'package:ecobiz_mobile_flutter/const/sized_margin_padding.dart';
+import 'package:ecobiz_mobile_flutter/const/sized_space.dart';
+
+import 'package:flutter/material.dart';
+
+class BoxListProduk extends StatelessWidget {
+  final String title;
+  final String date;
+  final String dateBegin;
+  final String dateEnd;
+  final bool enableButtonJoin;
+  const BoxListProduk({
+    Key? key,
+    required this.title,
+    required this.date,
+    required this.dateBegin,
+    required this.dateEnd,
+    this.enableButtonJoin = false,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(SizedMarginPadding.sized_12),
+      decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius:
+              BorderRadius.circular(SizedBorderRadius.borderRadiusButton)),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            title,
+            style: TextStyleHeading.textH7XXSmall.copyWith(
+              fontWeight: SizedFontWeight.boldHeavy,
+              color: ColorsCustom.othersColor.darkGrey10,
+            ),
+            // maxLines: 2,
+            // overflow: TextOverflow.ellipsis,
+          ),
+          const SizedBox(height: SizedSpace.sizedSmall),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                child: Row(
+                  children: [
+                   
+                    const SizedBox(width: SizedSpace.sizedVerySmall),
+                    Text(
+                      'Rp. 15.000 /',
+                      style: TextStyleHeading.textH8SuperSmall.copyWith(fontWeight: SizedFontWeight.boldHeavy,
+                        color: ColorsCustom.colorGreen400,
+                      ),
+                      
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 4),
+                      child: Text(' gram', style: TextStyleHeading.textH8SuperSmall.copyWith(fontWeight: SizedFontWeight.textLight,fontSize: SizedFont.textMediumxx,
+                        color: ColorsCustom.textGrey
+                      ),),
+                    )
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
