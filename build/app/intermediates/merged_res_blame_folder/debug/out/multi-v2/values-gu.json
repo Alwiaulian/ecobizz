@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/macbook/Macbook/Developer/ecobiz-mobile-flutter/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml",
+            "outputFile": "/Users/macbook/Macbook/ulik/ecobizz/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml",
             "map": [
                 {
                     "source": "/Users/macbook/.gradle/caches/transforms-2/files-2.1/d5f5bb923ef231125221909ffa1de444/jetified-firebase-messaging-23.0.0/res/values-gu/values.xml",
